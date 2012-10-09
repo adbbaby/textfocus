@@ -1,0 +1,89 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><?php echo (C("APPNAME")); ?></title>
+	<link href="../Public/style/reset.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+	
+	<!-- Le styles -->
+	<link href="../Public/style/bootstrap.css" rel="stylesheet">
+	<link href="../Public/style/bootstrap-responsive.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+		
+<script type="text/javascript">
+
+function fleshVerify(){
+//重载验证码
+var timenow = new Date().getTime();
+document.getElementById('verifyImg').src= '<?php echo U('Admin/Public/verify');?>/'+timenow;
+}
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div id="logo">
+				&nbsp;
+			</div>
+			<div class="row">
+				<div class="span5">&nbsp;</div>
+				<div class="span6">
+					<div id="shadow">
+						<div id="login">
+							<div class="header">
+								<span class="left"></span>
+								<span class="mid"></span>
+								<span class="right"></span>
+							</div>
+							<div class="content">
+								<form action="<?php echo U('Admin/Public/checkLogin');?>" method="post" >
+								<table border="0" class="logintable">
+									<tr height="45" valign="middle">
+										<th width="70" align="center">　用　户</th>
+										<td><input type="text" name="username" value="" class="inputText"/></td>
+										<td width="130">&nbsp;</td>
+									</tr>
+									<tr height="45" valign="middle">
+										<th width="70" align="center">　密　码</th>
+										<td><input type="password" name="password" value="" class="inputText"/></td>
+										<td width="130">&nbsp;</td>
+									</tr>
+									<tr height="45" valign="middle">
+										<th width="70" align="center">　验证码</th>
+										<td>
+											<input type="text" name="verify" value="" maxlength="4" class="input-mini"/>
+											<A HREF="javascript:fleshVerify()" style="position:relative;">
+												<img SRC="<?php echo U('Admin/Public/verify');?>" name="verifyImg" BORDER="0" align="absmiddle" id="verifyImg" title="如果您无法识别验证码，请点图片更换">
+											</a>
+										</td>
+										<td width="130">&nbsp;</td>
+									</tr>
+									<tr height="45" valign="middle">
+										<td colspan="3" align="center"> 
+										<input type="submit" value="登录" class="btn btn-success" />
+										<a href="<?php echo U('Public/register');?>" class="btn">注册</a>
+										</td>
+									</tr>
+								</table>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span1">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

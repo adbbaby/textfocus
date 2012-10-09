@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网龙</title>
+<link rel="stylesheet" href="../Public/style/reset.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../Public/style/layout.css" type="text/css" media="all" />
+
+<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
+
+<!--表单验证-->
+<script type="text/javascript" src="../Public/js/jquery.validator.reg.js"></script>
+<script type="text/javascript" src="../Public/js/register.js" ></script>
+
+<script type="text/javascript">
+
+
+function fleshVerify(){
+//重载验证码
+var timenow = new Date().getTime();
+document.getElementById('verifyImg').src= '__APP__/Public/verify/'+timenow;
+}
+</script>
+
+</head>
+
+<body>
+<div id="container">
+<div class="content"><!-- 内容 begin  -->
+<div class="main no_l">
+<div class="mainbox">
+  <div class="mainbox_R">
+	<div style="padding:10px;">
+	  <p class="pb10">已有帐号？请直接登录</p>
+	  <p class="pb10 lineS_btm"><a href="{:U('Public/login')}" class="N_but">登录</a></p>
+	</div>
+  </div>
+  <div class="mainbox_C">
+	<div class="reg_box">
+	<div class="left" style="width:100%">
+	  <h2 class="cBlue"><strong>快速注册</strong></h2>
+	  </div>
+	  <form action="{:U('Public/doDeveloperRegister')}" method="post" id="regform" name="reg">
+		<php>if ($invite_code) {</php>
+			<input type="hidden" name="invite_code" value="{$invite_code}">
+		<php>}</php>
+		<ul class="form_list">
+		  <li class="form_li">
+			<div class="reg_li_1">登录邮箱：</div>
+			<div class="reg_li_2">
+			  <input type="text" class="text35" style="width:250px;" value="" name="dev_email" require="true" datatype="email|ajax" url="{:U('Public/isEmailAvailable')}" msg="请填有效邮箱地址，以完成注册|邮箱已被占用"/>
+			</div>
+			<div class="reg_li_3">
+			  <div id="success_dev_email" style="display:none;"> <span class="ico_cue_ok"></span> </div>
+			  <div class="error_dev_email" style="position: relative;display:none;"> <span class="ico_cue_no"></span><span id="error_dev_email"></span> </div>
+			</div>
+		  </li>
+		  <li class="form_li">
+			<div class="reg_li_1">站内昵称：</div>
+			<div class="reg_li_2">
+			  <input type="text" class="text35" style="width:250px;" value="" name="dev_username" min="3" max="10" maxLength="10" require="true" datatype="require|ajax" url="{:U('Public/isValidNickName')}"  msg="重要！请填写用户名"/>
+			</div>
+			<div class="reg_li_3">
+			  <div id="success_dev_username" style="display:none;"><span class="ico_cue_ok"></span></div>
+			  <div class="error_dev_username" style="position: relative;display:none;"><span class="ico_cue_no"></span><span id="error_dev_username"></span></div>
+			</div>
+		  </li>
+		  <li class="form_li">
+			<div class="reg_li_1">登录密码：</div>
+			<div class="reg_li_2">
+			  <input type="password" class="text35" style="width:250px;" name="dev_password" id="dev_password" require="true" value="" datatype="limit"  min="6" max="16" msg="密码由6-16个字符组成"/>
+			</div>
+			<div class="reg_li_3">
+			  <div id="success_dev_password"  style="display:none;"> <span class="ico_cue_ok"></span> </div>
+			  <div class="error_dev_password" style="position: relative;display:none;"> <span class="ico_cue_no"></span> <span id="error_dev_password"></span> </div>
+			</div>
+		  </li>
+		  <li class="form_li">
+			<div class="reg_li_1">确认密码：</div>
+			<div class="reg_li_2">
+			  <input type="password" class="text35" style="width:250px;" name="repassword" require="true" value="" datatype="repeat|limit"  min="6" max="16" to="dev_password" msg="两次输入的密码须一样|密码由6-16个字符组成"/>
+			</div>
+			<div class="reg_li_3">
+			  <div id="success_repassword"  style="display:none;"> <span class="ico_cue_ok"></span> </div>
+			  <div class="r error_repassword" style="position: relative;display:none;"> <span class="ico_cue_no"></span> <span id="error_repassword"></span> </div>
+			</div>
+		  </li>
+		  <eq name="register_verify_on" value="1">
+		  <li class="form_li">
+			<div class="reg_li_1">验证码：</div>
+			<div class="reg_li_2">
+			  <input type="text" class="text35" style="width:100px;" name="verify" require="true" value="" datatype="require"  msg="验证码不能为空"/>
+			  <a href="javascript:void(0);" onclick="changeverify()"><img src="{:U('public/verify')}" id="verifyimg" alt="换一张" /></a> </div>
+			<div class="reg_li_3">
+			  <div id="success_verify"  style="display:none;"> <span class="ico_cue_ok"></span> </div>
+			  <div class="r error_verify" style="position: relative;display:none;"> <span class="ico_cue_no"></span> <span id="error_verify"></span> </div>
+			</div>
+		  </li>
+		  </eq>
+		  <li class="form_li">
+			<div class="reg_li_1">&nbsp;</div>
+			<div class="reg_li_2"> 
+			<if condition="$_SERVER['HTTP_REFERER']">
+				<input type="hidden" name="HTTP_REFERER" value="{$_SERVER['HTTP_REFERER']}">
+			</if>
+				<input type="submit" class="btn_green_w121" value="创建帐号">
+			</div>
+		  </li>
+		</ul>
+	  </form>
+	</div>
+	<div class="clear"></div>
+  </div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

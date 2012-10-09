@@ -1,0 +1,97 @@
+[ 2012-10-08T16:55:57+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T16:55:57+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T16:55:57+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T16:55:57+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T16:57:22+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:44+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:47+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:49+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:55+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:55+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:56+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:57:56+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:59:02+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:59:14+08:00 ] ERR: (ThinkException) 无法加载模块:Public
+[ 2012-10-08T16:59:33+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_developer' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_developer`
+[ 2012-10-08T16:59:45+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_developer' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_developer`
+[ 2012-10-08T16:59:49+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_developer' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_developer`
+[ 2012-10-08T16:59:55+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_admin' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_admin`
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:19:35+08:00 ] ERR: (ThinkException) 无法加载模块:public
+[ 2012-10-08T17:39:55+08:00 ] ERR: (ThinkException) Model:getGroupMenu您所请求的方法不存在！
+[ 2012-10-08T17:40:55+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:40:56+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:40:58+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:40:59+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:41:01+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:43:24+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:43:25+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:43:29+08:00 ] ERR: (ThinkException) 无法加载模块:Ads
+[ 2012-10-08T17:43:30+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_user_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_user_view`
+[ 2012-10-08T17:43:31+08:00 ] ERR: (ThinkException) 无法加载模块:Ads
+[ 2012-10-08T17:43:32+08:00 ] ERR: (ThinkException) 无法加载模块:Application
+[ 2012-10-08T17:43:33+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_user_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_user_view`
+[ 2012-10-08T17:43:33+08:00 ] ERR: (ThinkException) 无法加载模块:Application
+[ 2012-10-08T17:43:35+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:43:35+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:45:06+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:45:06+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:45:08+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_user_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_user_view`
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 实例化一个不存在的类！:BreadcrumbWidget
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:style
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:style
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:style
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:style
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:__PUBLIC__
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:__PUBLIC__
+[ 2012-10-08T17:45:13+08:00 ] ERR: (ThinkException) 非法操作:js
+[ 2012-10-08T17:45:29+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:45:29+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:45:34+08:00 ] ERR: (ThinkException) 无法加载模块:Users
+[ 2012-10-08T17:45:38+08:00 ] ERR: (ThinkException) 无法加载模块:Groups
+[ 2012-10-08T17:45:39+08:00 ] ERR: (ThinkException) 无法加载模块:Node
+[ 2012-10-08T17:45:40+08:00 ] ERR: (ThinkException) 无法加载模块:Permissions
+[ 2012-10-08T17:45:41+08:00 ] ERR: (ThinkException) 无法加载模块:Node
+[ 2012-10-08T17:45:44+08:00 ] ERR: (ThinkException) 无法加载模块:Permissions
+[ 2012-10-08T17:45:45+08:00 ] ERR: (ThinkException) 无法加载模块:Users
+[ 2012-10-08T17:45:46+08:00 ] ERR: (ThinkException) 无法加载模块:Groups
+[ 2012-10-08T17:47:04+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:47:04+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:47:32+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:47:32+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:47:35+08:00 ] ERR: (ThinkException) 参数错误或者未定义:model
+[ 2012-10-08T17:47:36+08:00 ] ERR: (ThinkException) 无法加载模块:Users
+[ 2012-10-08T17:47:41+08:00 ] ERR: (ThinkException) 参数错误或者未定义:model
+[ 2012-10-08T17:47:49+08:00 ] ERR: (ThinkException) 参数错误或者未定义:model
+[ 2012-10-08T17:48:11+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:48:12+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:50:20+08:00 ] ERR: (ThinkException) 无法加载模块:Users
+[ 2012-10-08T17:50:23+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T17:50:23+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T18:00:39+08:00 ] ERR: (ThinkException) Table 'textfocus.tf_user_view' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `tf_user_view`
+[ 2012-10-08T18:00:43+08:00 ] ERR: (ThinkException) 无法加载模块:Ads
+[ 2012-10-08T18:00:44+08:00 ] ERR: (ThinkException) 无法加载模块:Ads
+[ 2012-10-08T18:00:45+08:00 ] ERR: (ThinkException) 无法加载模块:Ads
+[ 2012-10-08T18:00:46+08:00 ] ERR: (ThinkException) 无法加载模块:Developer
+[ 2012-10-08T18:00:57+08:00 ] ERR: (ThinkException) 模板不存在[./App/Tpl/Admin/default/Setting/configList.html]
+[ 2012-10-08T18:07:18+08:00 ] ERR: (ThinkException) 模板不存在[./App/Tpl/Admin/default/Setting/configList.html]
+[ 2012-10-08T18:07:21+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T18:07:21+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T18:07:24+08:00 ] ERR: (ThinkException) 非法操作:配置列表
+[ 2012-10-08T18:07:26+08:00 ] ERR: (ThinkException) 非法操作:配置列表
+[ 2012-10-08T18:07:41+08:00 ] ERR: (ThinkException) 无法加载模块:Menu
+[ 2012-10-08T18:07:41+08:00 ] ERR: (ThinkException) 无法加载模块:Menu

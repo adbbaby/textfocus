@@ -1,0 +1,1 @@
+<?phpif (!defined('THINK_PATH')) exit();//信息类型return array(	'SHOW_DIY_TRACE'=>1,	'SHOW_PAGE_TRACE'=>1,	'SHOW_ADV_TIME'=>1,);?>

@@ -1,0 +1,89 @@
+<include file="Public:header" />
+<!-- 主页面区域 -->
+
+<div id="table">
+	<form action="__URL__/doAdd" method="POST" id="mainform" >
+	<table class="edit" cellspacing="0">
+	<thead>
+		<tr>
+			<th colspan="3" class="full"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th align="right" width="25%">用 户 名：</td>
+			<td>
+				<div class="control-group" style="margin-bottom:0px;">
+					<div class="controls">
+						<input name="username" type="text" value="{$vo.username}" min="3" max="10" maxLength="10"  require="true" datatype="require" msg="重要！请填写用户名" />
+						<span class="help-inline">
+							<span id="success_username" style="display:none;"> <span class="ico_cue_ok"></span> </span>
+							<span class="error_username" style="position: relative;display:none;"> <span class="ico_cue_no"></span><span id="error_username"></span></span>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th align="right" >密　码：</th>
+			<td>
+				<div class="control-group" style="margin-bottom:0px;">
+					<div class="controls">
+						<input name="password" type="password" value="" require="true"  datatype="limit"  min="6" max="16" msg="密码由6-16个字符组成"/> 
+						<span class="help-inline">
+							<span id="success_password" style="display:none;"> <span class="ico_cue_ok"></span> </span>
+							<span class="error_password" style="position: relative;display:none;"> <span class="ico_cue_no"></span><span id="error_password"></span></span>
+						</span>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th align="right" >确认密码：</th>
+			<td><input name="password2" type="password" value=""  require="true" value="" datatype="repeat|limit"  min="6" max="16" to="dev_password" msg="两次输入的密码须一样|密码由6-16个字符组成"/> 
+				<span class="help-inline">
+							<span id="success_password2" style="display:none;"> <span class="ico_cue_ok"></span> </span>
+							<span class="error_password2" style="position: relative;display:none;"> <span class="ico_cue_no"></span><span id="error_password2"></span></span>
+						</span>
+			</td>
+		</tr>
+		<tr>
+			<th align="right"  width="25%">真实姓名：</td>
+			<td><input name="contact_person" type="text" value="{$vo.contact_person}"  /></td>
+		</tr>
+		<tr>
+			<th align="right" >部　门：</th>
+			<td>
+				<select name="gid" id="select">
+					<volist name="list" id="row">
+					<option value="{$row.id}" <eq name="row.id" value="$vo['gid']">selected</eq>>{$row.name}</option>
+					</volist>
+			</select>
+		 </td>
+		</tr>
+		<tr>
+			<th align="right" >描　述：</th>
+			<td><input name="remark" type="text" value="{$vo.remark}"  /></td>
+		</tr>
+		<tr>
+			<th align="right" >状　态：</th>
+			<td>
+				<input type="radio" name="status" value="1" checked=checked />启用
+				<input type="radio" name="status" value="0" />锁定
+			</td>
+		</tr>
+	</tbody>
+		<tfoot>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="submit" class="btn btn-primary" name="Submit" value="修改" />
+				<input type="button" class="btn btnClose" name="add" value="返回" />
+			</td>
+		</tr>
+		</tfoot>
+	</table>
+	</form>
+</div>
+
+<!-- 主页面结束 -->
+<include file="Public:footer" />

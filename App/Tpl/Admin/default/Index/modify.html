@@ -1,0 +1,43 @@
+<tagLib name="html,cx" />
+<include file="Public:header" />
+<div id="container">
+	<div id="detail">
+		<h3>个人资料</h3>
+		
+		<div class="detailcontent">
+			<div class="photo fl">
+				<img src="../Public/images/default.jpg" alt="头像">
+					<a href="#" class="button">上传头像</a>
+					<a href="__URL__/edit/" class="button">修改资料</a>
+					<a href="__URL__/resetPassword/" class="button">修改密码</a>
+				</div>
+			<ul>
+				<li class="username">{$vo.userName}</li>
+				<li>部门:{$vo.groupName}</li>
+				<li>邮箱:{$vo.email}</li>
+				<li>QQ:{$vo.qq}</li>
+				<li>电话:{$vo.telephone}</li>
+				<li>手机:{$vo.mobile}</li>
+				<li>生日:{$vo.birthday|date="Y-m-d",###}</li>
+				<li>入职时间:{$vo.entrytime|date="Y-m-d",###}</li>
+			</ul>
+			<div class="bottombutton">
+			<a href="#" class="returnbutton"  onclick="javascript:history.go(-1)" >返回上一级</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.pngFix.pack.js"></script>
+<script type="text/javascript">
+    
+$(document).ready(function(){
+    
+$(document).pngFix();
+    
+});
+</script>
+<!-- 主页面结束 -->
+{// 加载尾部公共文件 }
+<include file="../Public/footer" />

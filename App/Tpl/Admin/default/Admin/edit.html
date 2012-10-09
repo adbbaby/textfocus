@@ -1,0 +1,57 @@
+<include file="Public:header" />
+<!-- 菜单区域	-->
+
+	<div id="table">
+		<form action="__URL__/doEdit" method="POST" id="mainform">
+		<table class="edit"	cellspacing="0">
+		<thead>
+			<tr>
+				<th colspan="4" class="full"></th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th width="25%">用 户 名</td>
+				<td><input name="username" type="text" value="{$vo.username}"/></td>
+			</tr>
+			<tr>
+				<th width="25%">真 实 姓 名</td>
+				<td><input name="contact_person" type="text" value="{$vo.contact_person}"/></td>
+			</tr>
+			<tr>
+				<th>部门</th>
+				<td>
+					<select name="gid" id="select">
+						<volist name="list" id="row">
+						<option value="{$row.id}" <eq name="row.id" value="$vo['gid']">selected</eq>>{$row.name}</option>
+						</volist>
+				</select>
+			* </td>
+			</tr>
+			<tr>
+				<th>描述</th>
+				<td><input name="remark" type="text" value="{$vo.remark}" /></td>
+			</tr>
+			<tr>
+				<th>状态</th>
+				<td>
+					<input type="radio" name="status"	value="1" checked=checked />启用
+					<input type="radio" name="status"	value="0" />锁定
+				</td>
+			</tr>
+		</tbody>
+			<tfoot>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="hidden" name="id" value="{$vo.id}"/>
+				<input type="submit" class="btn"	name="Submit" value="修改" />
+				<input type="button" class="btn" name="add" value="返回" onclick="javascript:history.go(-1)" /></td>
+			</tr>
+			</tfoot>
+		</table>
+		</form>
+	</div>
+
+<!-- 主页面结束 -->
+<include file="Public:footer" />
